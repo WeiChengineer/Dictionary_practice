@@ -8,3 +8,9 @@
 # have.
 
 # Write your code here.
+cat = {
+    "name": "cat",
+    "breed": "tabby",
+    "age": 3,
+}
+print(cat)

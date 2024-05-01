@@ -11,6 +11,11 @@ GUEST_LIST = {
 }
 
 # Write your function here.
+def greeting(name):
+  if name in GUEST_LIST:
+    return f"Hi! I'm {name} from {GUEST_LIST[name]}."
+  else:
+    return "Hi! I'm a guest."
 
 print(greeting("Kurt"))   #> "Hi! I'm Kurt from Germany."
 print(greeting("Sam"))    #> "Hi! I'm Sam from Argentina."

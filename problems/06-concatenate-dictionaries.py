@@ -5,7 +5,12 @@
 
 # Write your code here.
 def concatenate_dictionaries(lst):
-    pass
+    new_dictionary = lst[0]
+    for i in range(1, len(lst)):
+        for key in lst[i]:
+                new_dictionary[key] = lst[i][key]  
+    return new_dictionary
+        
 
 lst = [
     {

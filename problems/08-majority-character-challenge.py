@@ -4,6 +4,21 @@
 # length of the string.
 
 # Write your code here.
+def majority_char(s):
+    count = {}
+    n = len(s)
+
+    for char in s:
+        if char in count:
+            count[char] += 1
+        else:
+            count[char] = 1
+    
+    for char, count in count.items():
+        if count > n / 2:
+            return char
+
+    return None
 
 str = 'all'
 str2 = 'welcome to the jungle'
